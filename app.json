@@ -2,25 +2,88 @@
   "expo": {
     "scheme": "acme",
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff",
+          "sounds": [
+            "./assets/notification-sound.wav"
+          ]
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to track your emotional patterns.",
+          "locationAlwaysPermission": "Allow $(PRODUCT_NAME) to use your location to track your emotional patterns.",
+          "locationWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to track your emotional patterns."
+        }
+      ],
+      "expo-sqlite"
     ],
-    "name": "expo-router-mwe",
+    "name": "EmoGo",
     "slug": "expo-router-mwe",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
     "android": {
-      "package": "com.spiketren.exporoutermwe"
+      "package": "com.spiketren.exporoutermwe",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM",
+        "POST_NOTIFICATIONS"
+      ]
     },
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "7918e76f-59e9-45c4-aae4-c99cec64cfac"
+        "projectId": "4964540f-4915-4520-96f0-e0140144bbb0"
       }
     },
-    "owner": "spiketren",
+    "owner": "rafa-612",
     "ios": {
       "bundleIdentifier": "com.spiketren.exporoutermwe",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
-      }
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "This app needs access to your camera to record video selfies.",
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone to record video selfies.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to save videos.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs permission to save videos to your photo library.",
+        "NSLocationWhenInUseUsageDescription": "Allow EmoGo to access your location to track your emotional patterns and provide location-based insights.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Allow EmoGo to access your location to track your emotional patterns and provide location-based insights.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch",
+          "remote-notification"
+        ]
+      },
+      "supportsTablet": false
     }
   }
 }

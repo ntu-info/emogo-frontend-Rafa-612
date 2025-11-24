@@ -1,21 +1,37 @@
 import { Stack } from "expo-router";
+import { ThemeProvider } from "@/contexts/ThemeContext";
+import { useEffect } from "react";
+import { initDatabase } from "@/utils/database";
+import * as Notifications from 'expo-notifications';
 
 export default function RootLayout() {
+  useEffect(() => {
+    initDatabase().catch(console.error);
+
+    // 監聽通知接收
+    const subscription = Notifications.addNotificationReceivedListener(notification => {
+      console.log('🔔 Notification received!', notification);
+    });
+
+    // 監聽通知點擊
+    const responseSubscription = Notifications.addNotificationResponseReceivedListener(response => {
+      console.log('👆 Notification tapped!', response);
+    });
+
+    return () => {
+      subscription.remove();
+      responseSubscription.remove();
+    };
+  }, []);
+
   return (
-    <>
-      {/* Root stack controls screen transitions for the whole app */}
+    <ThemeProvider>
       <Stack>
-        {/* The (tabs) group is one Stack screen with its own tab navigator */}
         <Stack.Screen
           name="(tabs)"
           options={{ headerShown: false }}
         />
-        {/* This screen is pushed on top of tabs when you navigate to /details */}
-        <Stack.Screen
-          name="details"
-          options={{ title: "Details" }}
-        />
       </Stack>
-    </>
+    </ThemeProvider>
   );
 }

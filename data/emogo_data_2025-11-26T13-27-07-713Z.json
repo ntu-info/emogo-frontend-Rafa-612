@@ -1,0 +1,62 @@
+[
+  {
+    "id": 5,
+    "timestamp": "2025-11-25T08:03:38.984Z",
+    "emotionScore": 2,
+    "videoPath": "file:///var/mobile/Containers/Data/Application/DBE2D63D-BCDD-4F5E-A6EF-79FDC3E4E982/Documents/ExponentExperienceData/@rafa-612/expo-router-mwe/emogo_video_2025-11-25T08-03-27-857Z.mp4",
+    "latitude": 25.01566314913234,
+    "longitude": 121.53754422223071,
+    "address": "Daan District, Taipei City, Taiwan",
+    "temperature": 20,
+    "weatherCondition": "Partly cloudy",
+    "weatherIcon": "☁️"
+  },
+  {
+    "id": 4,
+    "timestamp": "2025-11-25T05:06:16.742Z",
+    "emotionScore": 9,
+    "videoPath": "file:///var/mobile/Containers/Data/Application/DBE2D63D-BCDD-4F5E-A6EF-79FDC3E4E982/Documents/ExponentExperienceData/@rafa-612/expo-router-mwe/emogo_video_2025-11-25T05-06-08-464Z.mp4",
+    "latitude": 25.068660000352683,
+    "longitude": 121.62507277231754,
+    "address": "Xizhi District, New Taipei City, Taiwan",
+    "temperature": 22,
+    "weatherCondition": "Partly cloudy",
+    "weatherIcon": "☁️"
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-11-25T01:29:04.048Z",
+    "emotionScore": 8,
+    "videoPath": "file:///var/mobile/Containers/Data/Application/DBE2D63D-BCDD-4F5E-A6EF-79FDC3E4E982/Documents/ExponentExperienceData/@rafa-612/expo-router-mwe/emogo_video_2025-11-25T01-28-46-617Z.mp4",
+    "latitude": 25.068660000352683,
+    "longitude": 121.62507277231754,
+    "address": "Xizhi District, New Taipei City, Taiwan",
+    "temperature": 21,
+    "weatherCondition": "Partly cloudy",
+    "weatherIcon": "☁️"
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-11-24T17:14:21.826Z",
+    "emotionScore": 8,
+    "videoPath": "file:///var/mobile/Containers/Data/Application/DBE2D63D-BCDD-4F5E-A6EF-79FDC3E4E982/Documents/ExponentExperienceData/@rafa-612/expo-router-mwe/emogo_video_2025-11-24T17-13-59-343Z.mp4",
+    "latitude": 25.068660000352683,
+    "longitude": 121.62507277231754,
+    "address": "Xizhi District, New Taipei City, Taiwan",
+    "temperature": 21,
+    "weatherCondition": "Partly cloudy",
+    "weatherIcon": "☁️"
+  },
+  {
+    "id": 1,
+    "timestamp": "2025-11-24T16:21:21.764Z",
+    "emotionScore": 7,
+    "videoPath": "file:///var/mobile/Containers/Data/Application/DBE2D63D-BCDD-4F5E-A6EF-79FDC3E4E982/Documents/ExponentExperienceData/@rafa-612/expo-router-mwe/emogo_video_2025-11-24T16-21-10-899Z.mp4",
+    "latitude": 25.068660000352683,
+    "longitude": 121.62507277231754,
+    "address": "Xizhi District, New Taipei City, Taiwan",
+    "temperature": 21,
+    "weatherCondition": "Partly cloudy",
+    "weatherIcon": "☁️"
+  }
+]

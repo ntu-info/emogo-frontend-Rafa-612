@@ -1,4 +1,4 @@
-#!/bin/bash
+˙最一#!/bin/bash
 
 echo "🚀 Installing EmoGo dependencies..."
 
